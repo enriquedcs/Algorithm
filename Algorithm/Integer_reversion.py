@@ -13,4 +13,13 @@ def reverse_integer(n):
 
     return reverse
 
+#built in solution
+
+def reverse_int(n):
+    return int(str(n)[::-1])
+
+int1 = 54321
+
 print(reverse_integer(4321))
+
+print(reverse_int(int1))

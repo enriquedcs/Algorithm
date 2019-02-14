@@ -2,15 +2,22 @@
 #Identify if number is prime
 
 
-def prime_number(num):
-    if (num < 1):
-        print("number must be greater than 0")
-        return False
+class primo:
 
-    if (num % 2) == 0:
-        print("Number is not a prime: ", num)
+    def __init__(self, num):
+        self.num = num
 
-    else:
-        print("Number is prime: ", num)
+    def prime_number(self):
+        if (self.num < 1):
+            print("number must be greater than 0")
+            return False
 
-prime_number(9007)
+        if (self.num % 2) == 0:
+            print("Number is not a prime: ", self.num)
+
+        else:
+            print("Number is prime: ", self.num)
+
+
+t = primo(23)
+t.prime_number()
